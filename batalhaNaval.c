@@ -12,11 +12,16 @@ int main (){
         }
     }
 
-     tabuleiro [0][0]= 1;
-     tabuleiro [0][1]= 1;
+for (int i = 0; i < 10; i++)
+{
+    tabuleiro [i] [i] = 1; 
+}
 
-     tabuleiro [4][3]=1;
-     tabuleiro [5][3]=1;
+for (int i = 0; i < 10; i++)
+{
+    tabuleiro [i] [9-i] = 2; 
+}
+
      
     printf("  ");
     for(int i = 0; i < 10; i ++)
